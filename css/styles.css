@@ -7,3 +7,33 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+li {
+  list-style-type: none;
+}
+
+header, footer {
+  background-color: #06D6A0;
+}
+
+header {
+  color: white;
+}
+
+#Home {
+  background-color: #26547C;
+  color: white;
+}
+
+#Cats {
+  background-color: #FFD166;
+}
+
+#Products {
+  background-color: #F2F2F2;
+}
+
+#About {
+  background-color: #26547C;
+  color: white;
+}
