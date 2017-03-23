@@ -6,19 +6,34 @@
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 body {
   margin: 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
 }
 
 li {
   list-style-type: none;
+  font-size: 14px;
+}
+
+section {
+  padding: 35px 20px;
 }
 
 header, footer {
   background-color: #06D6A0;
   height: 60px;
+}
+
+p {
+  font-size: 14px;
 }
 
 /*Yes, I checked the source and realized h1 is not floated*/
@@ -33,11 +48,12 @@ which makes more sense than what I did.*/
 nav li {
   float: right;
   line-height: 60px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 /* ugly hack */
 nav ul:last-child {
+  margin: 0;
   margin-right: 20px;
 }
 
@@ -49,6 +65,8 @@ header {
   background-color: #26547C;
   color: white;
   overflow: auto;
+  padding: 0px;
+  padding-bottom: 3px;
 }
 
 #Home > img {
@@ -58,11 +76,11 @@ header {
 }
 
 #Home  h1 {
-  display: inline-block;
+  float: left;
   width: 40%;
   margin: 0;
   padding-top: 31.125px;
-  font-size: 40px;
+  font-size: 38px;
   text-align: center;
 
 }
@@ -71,8 +89,25 @@ header {
   background-color: #FFD166;
 }
 
+/* more ugly hacking :) */
+#Cats > h1 {
+  font-size: 17px;
+}
+
 #Products {
   background-color: #F2F2F2;
+  width: 100%
+}
+
+#Products ul {
+  width: 100%;
+}
+
+#Products li {
+  display: inline-block;
+  width: 33%;
+  padding: 10px;
+}
 }
 
 #About {
