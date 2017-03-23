@@ -23,6 +23,10 @@ li {
   font-size: 14px;
 }
 
+ul {
+  padding: 0px;
+}
+
 section {
   padding: 35px 20px;
 }
@@ -59,6 +63,10 @@ nav ul:last-child {
 
 header {
   color: white;
+}
+
+img {
+  max-width: 100%;
 }
 
 #Home {
@@ -101,16 +109,39 @@ header {
 
 #Products ul {
   width: 100%;
+  overflow: hidden;
 }
 
 #Products li {
-  display: inline-block;
+  float: left;
   width: 33%;
   padding: 10px;
 }
+
+#Products img {
+  border: 3px solid black;
+}
+
+#products img {
+  display: float;
 }
 
 #About {
   background-color: #26547C;
   color: white;
+}
+
+#About li {
+  float: left;
+  color: #EF476F;
+  width: 33%;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#About ul {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 30px;
 }
