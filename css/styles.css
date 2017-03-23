@@ -21,18 +21,22 @@ header, footer {
   height: 60px;
 }
 
+/*Yes, I checked the source and realized h1 is not floated*/
 nav > h1 {
   float: left;
   line-height: 60px;
   margin: 0 20px;
 }
 
+/*In the source, these are inline block,
+which makes more sense than what I did.*/
 nav li {
   float: right;
   line-height: 60px;
   margin-right: 10px;
 }
 
+/* ugly hack */
 nav ul:last-child {
   margin-right: 20px;
 }
@@ -44,6 +48,21 @@ header {
 #Home {
   background-color: #26547C;
   color: white;
+  overflow: auto;
+}
+
+#Home > img {
+  float: left;
+  width: 60%;
+  margin: 0;
+}
+
+#Home > h1 {
+  display: inline-block;
+  width: 40%;
+  margin: 0;
+  padding-top: 31.125px;
+
 }
 
 #Cats {
