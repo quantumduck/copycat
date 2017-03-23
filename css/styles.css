@@ -16,6 +16,14 @@ header, footer {
   background-color: #06D6A0;
 }
 
+nav > h1 {
+  float: left;
+}
+
+nav li {
+  float: right;
+}
+
 header {
   color: white;
 }
